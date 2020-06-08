@@ -31,21 +31,20 @@ More detailed exploration data is present in the Project_Report.pdf file
 * Trestbps and thalach can indicate if a patient has exang
 
 # Methodologies
-> * Hypothesis 1:
+> **Hypothesis 1**:
 > Split “num” into 4 variables based on the level of severity of the heart disease: num1 - num4;
 > Split data on training (70%) and testing (30%);
 > Run Lasso on training data for each num to define min lambda;
 > Run logistic regression on training data to identify the most significant factors and their coefficients;
 > Assess the prediction accuracy using test data for predictions.
 
-> * Hypothesis 2:
-
+> **Hypothesis 2**:
 > Assign values of 0 & 1 on num
 > Perform LASSO to determine the best subset of the dataset with response variable as num.
 > Perform scaling on the predictors determined from LASSO
 > Using Hierarchical  clustering with complete method on the dataset with predictors selected above
 
-> * Hypothesis 3:
+> **Hypothesis 3**:
 > Fit a logistic regression on trestbps and thalach regarding exang to test if the two predictors are of statistical significance.
 > Drop the predictor that’s not significant until the predictors are all significant
 
